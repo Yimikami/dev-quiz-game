@@ -546,9 +546,9 @@ const pythonQuestions = {
     {
       question: "What is the output of print(2 * 3 ** 3)?",
       answers: [
-        { text: "54", correct: false },
-        { text: "54", correct: false },
-        { text: "54", correct: false },
+        { text: "18", correct: false },
+        { text: "27", correct: false },
+        { text: "81", correct: false },
         { text: "54", correct: true },
       ],
     },
@@ -605,8 +605,8 @@ const pythonQuestions = {
       question:
         "Which method can be used to return a string in upper case letters?",
       answers: [
-        { text: "uppercase()", correct: false },
         { text: "upperCase()", correct: false },
+        { text: "uppercase()", correct: false },
         { text: "upper()", correct: true },
         { text: "toUpperCase()", correct: false },
       ],
