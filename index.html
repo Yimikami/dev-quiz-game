@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Quiz Game" width="350px" />
+    </header>
+    <div id="intro">
+      <h1>Welcome to Quiz Game</h1>
+      <p>
+        Test your knowledge with our quiz game. Choose a category and answer the
+        questions. Good luck!
+      </p>
+      <br />
+      <button class="btn" id="start-btn">Start</button>
+
+      <div id="colorblind-container">
+        <h3>Colorblind Mode</h3>
+        <input type="checkbox" id="colorblind-checkbox" />
+        <label for="colorblind-checkbox">Toggle</label>
+      </div>
+    </div>
+    <div id="game">
+      <div id="difficulty" class="hide">
+        <h1>Please choose a difficulty</h1>
+        <div id="difficulty-container">
+          <button class="btn" id="easy">Easy</button>
+          <button class="btn" id="medium">Medium</button>
+          <button class="btn" id="hard">Hard</button>
+        </div>
+      </div>
+      <div id="category" class="hide">
+        <h1>Please choose a category</h1>
+        <button class="btn" id="html">HTML</button>
+        <button class="btn" id="css">CSS</button>
+        <button class="btn" id="javascript">JavaScript</button>
+        <button class="btn" id="python">Python</button>
+        <button class="btn" id="react">React</button>
+        <button class="btn" id="sql">SQL</button>
+        <button class="btn" id="git">Git & Github</button>
+        <button class="btn" id="commandline">Command Line</button>
+        <p class="btn">Coming soon. Stay tuned!</p>
+      </div>
+
+      <div id="quiz-container" class="hide">
+        <div id="question-container">
+          <h1 id="question-title">Question</h1>
+          <div id="question">Question text</div>
+          <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        <div id="controls">
+          <button id="next-btn" class="next-btn btn hide">Next</button>
+          <button
+            id="submit-btn"
+            class="next-btn btn hide"
+            onclick="showResult()"
+          >
+            Results
+          </button>
+        </div>
+        <div id="result-container" class="hide">
+          <h1>Results</h1>
+          <p id="score"></p>
+          <p>Don't forget to share your result with us on the community 😇</p>
+          <button id="restart-btn" class="btn">Restart</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Made with ❤️ by Yimikami <br />
+        for final project of Codédex
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
