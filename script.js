@@ -20,7 +20,12 @@ const difficultyButtons = document
   .getElementById("difficulty")
   .querySelectorAll("button");
 
-let shuffledQuestions, currentQuestionIndex, score, colorBlind, difficulty;
+let shuffledQuestions,
+  currentQuestionIndex,
+  score,
+  colorBlind,
+  difficulty,
+  categoryName;
 
 colorBlindCheckbox.addEventListener("change", () => {
   colorBlind = colorBlindCheckbox.checked;
@@ -51,6 +56,7 @@ categoryButtons.forEach((button) => {
       category.classList.add("hide");
       difficultyDiv.classList.add("hide");
       quizContainer.classList.remove("hide");
+      categoryName = button.id;
       switch (button.id) {
         case "html":
           questions = htmlQuestions[difficulty];
@@ -165,13 +171,13 @@ function showResult() {
   resultContainer.classList.remove("hide");
   submitButton.classList.add("hide");
   if (score === 10) {
-    scoreElement.innerText = `Congratulations! You got a perfect score! 🎉`;
+    scoreElement.innerText = `Congratulations! You got a perfect score on ${categoryName} at ${difficulty} level! 🎉`;
   } else if (score >= 7) {
-    scoreElement.innerText = `Well done! You scored ${score} out of 10! 🎉`;
+    scoreElement.innerText = `Well done! You scored ${score} out of 10 on ${categoryName} at ${difficulty} level! 🎉`;
   } else if (score >= 4) {
-    scoreElement.innerText = `Not bad! You scored ${score} out of 10! 👏`;
+    scoreElement.innerText = `Not bad! You scored ${score} out of 10 on ${categoryName} at ${difficulty} level! 👏`;
   } else {
-    scoreElement.innerText = `Better luck next time! You scored ${score} out of 10! 👍`;
+    scoreElement.innerText = `Better luck next time! You scored ${score} out of 10 on ${categoryName} at ${difficulty} level! 👍`;
   }
 }
 
