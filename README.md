@@ -13,24 +13,6 @@ Quiz Game allows users to choose a category and difficulty level, then answer qu
 - Colorblind mode available for better accessibility.
 - Check your results at the end and restart the quiz.
 
-## Getting Started
-
-To run the Quiz Game locally, follow these steps:
-
-1. Clone this repository to your local machine:
-
-   ```
-   git clone <repository-url>
-   ```
-
-2. Navigate to the project directory:
-
-   ```
-   cd quiz-game
-   ```
-
-3. Open the `index.html` file in your web browser.
-
 ## Usage
 
 - Click the "Start" button to begin the quiz.
