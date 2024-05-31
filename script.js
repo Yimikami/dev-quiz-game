@@ -54,7 +54,6 @@ difficultyButtons.forEach((button) => {
   });
 });
 
-// if difficulty is not selected, show alert
 categoryButtons.forEach((button) => {
   button.addEventListener("click", () => {
     if (!difficulty) {
@@ -110,7 +109,6 @@ restartButton.addEventListener("click", () => {
 
 function startGame() {
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-  // also shuffle answers
   shuffledQuestions.forEach((question) => {
     question.answers.sort(() => Math.random() - 0.5);
   });
