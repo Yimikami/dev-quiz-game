@@ -19,12 +19,6 @@
       </p>
       <br />
       <button class="btn" id="start-btn">Start</button>
-
-      <div id="colorblind-container">
-        <h3>Colorblind Mode</h3>
-        <input type="checkbox" id="colorblind-checkbox" />
-        <label for="colorblind-checkbox">Toggle</label>
-      </div>
     </div>
     <div id="game">
       <div id="difficulty" class="hide">
@@ -56,13 +50,7 @@
         </div>
         <div id="controls">
           <button id="next-btn" class="next-btn btn hide">Next</button>
-          <button
-            id="submit-btn"
-            class="next-btn btn hide"
-            onclick="showResult()"
-          >
-            Results
-          </button>
+          <button id="submit-btn" class="next-btn btn hide">Results</button>
         </div>
         <div id="result-container" class="hide">
           <h1>Results</h1>
@@ -78,6 +66,6 @@
         for final project of Codédex
       </p>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
