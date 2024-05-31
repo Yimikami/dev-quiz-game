@@ -179,3 +179,11 @@ showResultButton.addEventListener("click", function () {
     scoreElement.innerText = `Better luck next time! You scored ${score} out of 10 on ${categoryName} at ${difficulty} level! 👍`;
   }
 });
+
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "hidden") {
+    document.title = "Hey! Stop cheating 🤨";
+  } else {
+    document.title = "Quiz Game";
+  }
+});
