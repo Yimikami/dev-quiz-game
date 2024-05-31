@@ -10,7 +10,6 @@ Quiz Game allows users to choose a category and difficulty level, then answer qu
 
 - Choose from multiple categories and difficulty levels.
 - Test your knowledge with a variety of questions.
-- Colorblind mode available for better accessibility.
 - Check your results at the end and restart the quiz.
 
 ## Usage
